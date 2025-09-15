@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NubeFlash - Forca com Cores</title>
+</head>
+<body>
+    <!-- Placar com pontuação e fase atual -->
+    <div id="scoreboard">
+        <p>Pontuação: <span id="score">0</span></p>
+        <p>Fase: <span id="phase">1</span></p>
+    </div>
+
+    <!-- Exibição da palavra com letras faltando -->
+    <div id="word-display-container">
+        <p id="word-display">_ _ _ _</p> <!-- Exemplo: palavra com 4 letras -->
+    </div>
+
+    <!-- Tabuleiro do jogo com 4 cores -->
+    <div id="game-board">
+        <div class="color" id="green" data-letter="C"></div>
+        <div class="color" id="red" data-letter="S"></div>
+        <div class="color" id="yellow" data-letter="A"></div>
+        <div class="color" id="blue" data-letter="A"></div>
+    </div>
+
+    <!-- Botão para iniciar o jogo -->
+    <button id="start">Iniciar</button>
+
+    <!-- Modal para mostrar as mensagens de fim de jogo ou vitória -->
+    <div id="modal" class="hidden" style="display: none;">
+        <div id="modal-content">
+            <p id="modal-message"></p>
+            <button id="modal-button">OK</button>
+        </div>
+    </div>
+    <br>
+
+    <a href="../../site/jogos.html"><button class="voltar">VOLTAR PARA A NUBEGAMES</button></a>
+
+    <!-- Inclusão do script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
